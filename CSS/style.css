@@ -1,0 +1,78 @@
+body {
+    background-color: white;
+  }
+  h1 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+
+    /* navigation menu styles */
+
+  nav :hover {
+    color: orange;
+    text-decoration: underline;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav li {
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 20px; 
+  }
+
+  nav li.active {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+
+  .active {
+    color: brown; 
+  }
+
+  /* .class {
+    heading: 
+
+  } */
+  
+  /* image for homepage */
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  /* All images  */
+
+  img{
+    width: 250px;
+    border: 10px solid rgb(38, 37, 37);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  img:hover{ 
+    opacity: 0.5;
+    border: 25px solid rgb(159, 153, 153) ;
+    padding: 10px;
+    /* margin: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .decor:hover{
+    opacity: 0.25;
+  }
+

@@ -42,7 +42,7 @@ body {
   /* Navigation menu styles */
 
   header {
-    background-image: url("../images/black_leaves.jpeg");
+    background-image: url("../images/orange_background.png");
     max-width: 100%;
     background-repeat: round;
 
@@ -50,17 +50,17 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    
     grid-column: 1;
     font-family: "Playfair Display";
   }
 
   nav a { 
-    color: white; 
+    color: black; 
   }
 
   nav :hover {
-    color: orange;
+    color: green;
     text-decoration: underline;
   }
 

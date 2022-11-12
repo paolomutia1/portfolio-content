@@ -3,8 +3,25 @@
   to {opacity: 1;}
 }
 
-#animated {
-  animation: 3s fadein; 
+
+/*
+  If the user has expressed their preference for
+  reduced motion, then don't use animations on buttons.
+*/
+@media (prefers-reduced-motion: reduce) {
+  #animated {
+    animation: none; 
+  }
+}
+
+/*
+  If the browser understands the media query and the user
+  explicitly hasn't set a preference, then use animations on buttons.
+*/
+@media (prefers-reduced-motion: no-preference) {
+  #animated {
+    animation: 3s fadein; 
+  }
 }
 
 body {

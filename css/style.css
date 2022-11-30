@@ -3,6 +3,36 @@
   to {opacity: 1;}
 }
 
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  /*Your code here - position relative to the parent */
+  /*Your code here - place 500px left and 40px higher */;
+
+  /* The link using the skip class (“Skip to Main Content”) should be positioned 500px to the left, 
+  and 40px above of the link’s parent element. (So it is hidden by default when we open the page). */
+  position: absolute;
+  /* margin-left: 500px;
+  margin-top: 40px; */
+  /* margin: 40px 0px 0px 500px; */
+  left: -500px;
+  top: -40px; 
+}
+
+.skip a:focus{
+  background: white;
+  top: 0;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+}
 /*
   If the user has expressed their preference for
   reduced motion, then don't use animations on buttons.

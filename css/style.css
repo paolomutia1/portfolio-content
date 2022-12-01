@@ -33,6 +33,7 @@
   z-index: 1;
   position: absolute;
 }
+
 /*
   If the user has expressed their preference for
   reduced motion, then don't use animations on buttons.
@@ -161,6 +162,19 @@ body {
     opacity: 0.25;
   }
 
+  /* form */
+
+  .simple-form{
+    background-color:orange;
+    padding:50px;
+    
+    display:grid;
+    grid-template-columns:100px 1fr; 
+    
+    column-gap: 100px;
+    row-gap: 15px;
+  } 
+
   /* mobile */
   @media screen and (max-width:370px) {
     #gallery {
@@ -172,6 +186,17 @@ body {
       width: 75%; 
       align-items: stretch; 
     }
+
+    .simple-form{
+      background-color:orange;
+      padding:50px;
+      
+      display:grid;
+      grid-template-columns:100px 1fr; 
+      
+      column-gap: 100px;
+      row-gap: 15px;
+    } 
 
   }
 
@@ -244,12 +269,26 @@ body {
       display: flex; 
       align-items: flex-start;
     }
+
+    /* form --- Tablet view  */
+
+    .simple-form{
+      background-color:orange;
+      padding:50px;
+      
+      display:grid;
+      grid-template-columns:100px 1fr; 
+      
+      column-gap: 100px;
+      row-gap: 15px;
+    } 
     
+  
 
   }
 
   /* Desktop ------------------------- ------------------------- ------------------------- -------------------------*/
-  @media screen and (min-width:968px) {
+  @media screen and (min-width:1160px) {
   
     #gallery {
       display: flex; 
@@ -307,8 +346,45 @@ body {
 
     }
 
-  }
 
+    /* Contact form  using CSS grid */
+
+    /* .simple-form{
+      /* max-width:400px; */
+      /* background-color:orange;
+      padding:50px;
+      
+      display:grid;
+      grid-template-columns:100px 1fr; 
+      
+      column-gap: 100px;
+      row-gap: 15px;
+    } */ 
+
+    /* 
+    #form-container{
+      display:grid;
+      justify-content: center;
+    }
+
+    #container-box {
+      display: grid; 
+      justify-content: center;
+    } */
+
+
+    .simple-form{
+        /* max-width: 400px; */
+        background-color: orange;
+        padding: 50px;
+        display: grid;
+        grid-template-rows: 10px 1fr;
+        grid-template-columns: 1000px;
+        column-gap: 50px;
+        row-gap: 100px;
+        justify-content: center;
+    }  
+}
 
   
   /* Footer */

@@ -86,6 +86,6 @@ const dogRhymes = async () => {
  document.querySelector('#more-dogs').addEventListener('click', () => {
   addAnimals(1)
  });
- document.querySelector('#more-cats').addEventListener('click', () => {
-  addAnimals(2)
- });
+//  document.querySelector('#more-cats').addEventListener('click', () => {
+//   addAnimals(2)
+//  });
